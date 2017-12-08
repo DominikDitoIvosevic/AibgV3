@@ -1,7 +1,0 @@
-C:\git\AibgV3\AibgJebach\AibgJebach\obj\Debug\AibgJebach.csprojResolveAssemblyReference.cache
-C:\git\AibgV3\AibgJebach\AibgJebach\obj\Debug\AibgJebach.csproj.CoreCompileInputs.cache
-C:\git\AibgV3\AibgJebach\AibgJebach\bin\Debug\AibgJebach.exe.config
-C:\git\AibgV3\AibgJebach\AibgJebach\bin\Debug\AibgJebach.exe
-C:\git\AibgV3\AibgJebach\AibgJebach\bin\Debug\AibgJebach.pdb
-C:\git\AibgV3\AibgJebach\AibgJebach\obj\Debug\AibgJebach.exe
-C:\git\AibgV3\AibgJebach\AibgJebach\obj\Debug\AibgJebach.pdb
