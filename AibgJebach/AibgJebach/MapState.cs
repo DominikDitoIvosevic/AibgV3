@@ -1,33 +1,33 @@
-﻿using System;
+﻿#region
+
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+#endregion
 
 namespace AibgJebach
 {
   public class MapState
   {
-    private Bot bot1, bot2;
-    private int stepsLeft;
-
-    public MapState(int totalSteps, Bot bot1, Bot bot2)
+    public MapState(List<List<TileType>> tiles)
     {
-      this.stepsLeft = totalSteps;
-      this.bot1 = bot1;
-      this.bot2 = bot2;
+      this.Tiles = tiles;
     }
 
-    public MapState GetNextState(Bot currentBot, BotMove botMove)
+    private List<List<TileType>> Tiles { get; }
+
+    public TileType GetTile(Position currentPosition) => this.Tiles[currentPosition.posX][currentPosition.posY];
+
+    public void AcquireMine(Bot bot)
     {
-      int posX = currentBot.PosX;
-      int posY = currentBot.PosY;
+      TileType newTileType = bot.IsBotNumberOne ? TileType.MinePlayer1 : TileType.MinePlayer2;
 
+      if (this.Tiles[bot.Position.posX][bot.Position.posY] == newTileType)
+      {
+        throw new InvalidOperationException("Already acquired");
+      }
 
+      this.Tiles[bot.Position.posX][bot.Position.posY] = newTileType;
     }
-
-    public bool IsOver => this.stepsLeft <= 0;
-
-    
   }
 }

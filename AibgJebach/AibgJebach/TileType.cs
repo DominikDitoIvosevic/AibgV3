@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AibgJebach
+﻿namespace AibgJebach
 {
   public static class TileTypes
   {
+    public static string EmptyTile = "  ";
     public static string Hero1 = "@1";
     public static string Hero2 = "@2";
     public static string Obstacle = "##";
@@ -16,8 +11,9 @@ namespace AibgJebach
     public static string MineNeutral = "$-";
     public static string CoffeeMachine = "[]";
 
-    private static string[] tileTypesMap =
+    private static readonly string[] tileTypesMap =
     {
+      EmptyTile,
       Hero1,
       Hero2,
       Obstacle,
@@ -27,14 +23,12 @@ namespace AibgJebach
       CoffeeMachine
     };
 
-    public static string GetTileDisplay(TileType tileType)
-    {
-      return tileTypesMap[(int) tileType];
-    }
+    public static string GetTileDisplay(TileType tileType) => tileTypesMap[(int) tileType];
   }
 
   public enum TileType
   {
+    EmptyTile,
     Hero1,
     Hero2,
     Obstacle,

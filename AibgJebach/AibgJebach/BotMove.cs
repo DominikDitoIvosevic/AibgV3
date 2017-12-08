@@ -1,8 +1,8 @@
-﻿using System;
+﻿#region
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+#endregion
 
 namespace AibgJebach
 {
@@ -12,5 +12,11 @@ namespace AibgJebach
     South,
     East,
     West
+  }
+
+  public static class BotMoveExtensions
+  {
+    public static List<BotMove> PossibleMoves =>
+      new List<BotMove> {BotMove.North, BotMove.South, BotMove.East, BotMove.West};
   }
 }

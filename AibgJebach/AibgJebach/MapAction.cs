@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿#region
+
+using System;
+
+#endregion
 
 namespace AibgJebach
 {
@@ -18,8 +18,17 @@ namespace AibgJebach
 
   public static class MapActionExtension
   {
-    public static MapAction GetMapAction(TileType currentTile, TileType targetTile)
+    public static MapAction GetMapAction(
+      Position currentPosition,
+      Position otherHeroPosition,
+      BotMove botMove,
+      MapState mapState,
+      bool isBotNumberOne)
     {
+      TileType currentTile = mapState.GetTile(currentPosition);
+      Position targetPosition = currentPosition.Move(botMove);
+      TileType targetTile = mapState.GetTile(targetPosition);
+
       MapAction action = 0;
 
       switch (targetTile)
@@ -42,13 +51,28 @@ namespace AibgJebach
       switch (currentTile)
       {
         case TileType.MineNeutral:
-        case TileType.MinePlayer1:
-        case TileType.MinePlayer2:
           action |= MapAction.BotAcquireMine;
+          break;
+        case TileType.MinePlayer1:
+          if (isBotNumberOne == false)
+          {
+            action |= MapAction.BotAcquireMine;
+          }
+          break;
+        case TileType.MinePlayer2:
+          if (isBotNumberOne)
+          {
+            action |= MapAction.BotAcquireMine;
+          }
           break;
         case TileType.CoffeeMachine:
           action |= MapAction.BotHeal;
           break;
+      }
+
+      if (targetPosition.IsNeighbouring(otherHeroPosition))
+      {
+        action |= MapAction.BotAttack;
       }
 
       return action;
