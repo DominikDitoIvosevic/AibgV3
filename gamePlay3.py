@@ -127,12 +127,22 @@ def goHealYourself(goodBoard, heroMy, heroTheir):
 
 
 
+
+
+
+
+iter = 0
+
 # bfs
 def algorithm1 (goodBoard, heroMy, heroTheir):
 
-    if heroMy.life < 50:
+    if heroMy.life < 22:
          return goHealYourself(goodBoard, heroMy, heroTheir)
 
+
+    if (iter > 150):
+        if heroMy.life < 50:
+            return goHealYourself(goodBoard, heroMy, heroTheir)
 
     ### just find closest shite ###
 
@@ -262,8 +272,8 @@ def parseBoard(boardSize, boardTiles):
 
 ### init request ####
 
-post_fields = {'key': 'eyx3wvrg'}     # actually 6 turns, it returns 3*4 = 12
-url = 'http://192.168.3.251:9000/api/arena'
+post_fields = {'key': 'q7y9r066'}     # actually 6 turns, it returns 3*4 = 12
+url = 'http://192.168.2.104:9000/api/arena'
 request = Request(url, urlencode(post_fields).encode())
 jsonData = json.loads(urlopen(request).read().decode())
 
@@ -275,6 +285,7 @@ goodBoard = None
 viewUrl = None
 
 while True:
+    iter +=1
 
     # at beggining fetched before while, will fetch at the end of loop
 
@@ -347,7 +358,7 @@ while True:
 
     # Stay, North, South, East, West
 
-    post_fields = {'key': 'eyx3wvrg', 'dir': dir}
+    post_fields = {'key': 'q7y9r066', 'dir': dir}
 
     url = playUrl  # Set destination URL here
     request = Request(url, urlencode(post_fields).encode())
