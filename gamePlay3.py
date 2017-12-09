@@ -140,10 +140,10 @@ healing = False
 def algorithm1 (goodBoard, heroMy, heroTheir):
 
     global healing
-    if heroMy.life < 22:
+    if heroMy.life < 25:
         healing = True
 
-    if healing and heroMy.life > 90:
+    if healing and heroMy.life > 85:
         healing = False
 
     if healing: 
@@ -379,9 +379,9 @@ while True:
     """
 
    #
-    st = time.time()
+    st = time.clock()
     dir = callDirectionAlgorithm (algorithm1, goodBoard, heroMy, heroTheir)
-    print (time.time() - st)
+    print (time.clock() - st)
    # print(dir)
     ############################################
 
@@ -391,10 +391,7 @@ while True:
 
     url = playUrl  # Set destination URL here
     request = Request(url, urlencode(post_fields).encode())
-    try:
-        jsonData = json.loads(urlopen(request).read().decode())
-    except:
-        print(urlencode(post_fields).encode())
+    jsonData = json.loads(urlopen(request).read().decode())
 
     ####current request end ###
 
