@@ -1,0 +1,9 @@
+C:\git\AibgV3\AibgJebach\CoreJebach\bin\Debug\netcoreapp2.0\CoreJebach.deps.json
+C:\git\AibgV3\AibgJebach\CoreJebach\bin\Debug\netcoreapp2.0\CoreJebach.dll
+C:\git\AibgV3\AibgJebach\CoreJebach\bin\Debug\netcoreapp2.0\CoreJebach.pdb
+C:\git\AibgV3\AibgJebach\CoreJebach\obj\Debug\netcoreapp2.0\CoreJebach.csprojResolveAssemblyReference.cache
+C:\git\AibgV3\AibgJebach\CoreJebach\obj\Debug\netcoreapp2.0\CoreJebach.csproj.CoreCompileInputs.cache
+C:\git\AibgV3\AibgJebach\CoreJebach\obj\Debug\netcoreapp2.0\CoreJebach.AssemblyInfoInputs.cache
+C:\git\AibgV3\AibgJebach\CoreJebach\obj\Debug\netcoreapp2.0\CoreJebach.AssemblyInfo.cs
+C:\git\AibgV3\AibgJebach\CoreJebach\obj\Debug\netcoreapp2.0\CoreJebach.dll
+C:\git\AibgV3\AibgJebach\CoreJebach\obj\Debug\netcoreapp2.0\CoreJebach.pdb
