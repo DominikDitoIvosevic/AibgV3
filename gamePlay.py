@@ -73,12 +73,14 @@ def parseBoard(boardSize, boardTiles):
 
 ### init request ####
 
-post_fields = {'key': 'eyx3wvrg', 'turns':3}     # actually 6 turns, it returns 3*4 = 12
+post_fields = {'key': 'eyx3wvrg', 'turns':2}     # actually 6 turns, it returns 3*4 = 12
 url = 'http://192.168.3.251:9000/api/training'
 request = Request(url, urlencode(post_fields).encode())
 jsonData = json.loads(urlopen(request).read().decode())
 
 ### init request end ###
+
+bol = False
 
 while True:
 
@@ -126,6 +128,9 @@ while True:
     playUrl = jsonData['playUrl'] # koristi se za zahtjev
 
 
+    print ("viewUrl {}".format(viewUrl))
+
+
 
     ###current request###
 
@@ -138,7 +143,16 @@ while True:
 
     ############################################
 
-    post_fields = {'key': 'eyx3wvrg', 'dir': 'Stay'}
+    # Stay, North, South, East, West
+
+    if bol:
+        dir = 'North'
+        bol = not bol
+    else:
+        dir = 'South'
+        bol = not bol
+
+    post_fields = {'key': 'eyx3wvrg', 'dir': dir}
 
     url = playUrl  # Set destination URL here
     request = Request(url, urlencode(post_fields).encode())
