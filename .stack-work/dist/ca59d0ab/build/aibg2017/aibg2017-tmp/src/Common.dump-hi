@@ -1,0 +1,1193 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-08 19:04:06.8275682 UTC
+
+interface main@main:Common 8002
+  interface hash: c3333cb37ffc7580175d203e119baa72
+  ABI hash: b2d61cc7ce4204edd1e2b72ebe1831d2
+  export-list hash: d8c41156030acce3df7e2aa08824331c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: bf649f09884cc1480c9abaa88eb3b410
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Control.Monad.Random.Class.fromList
+  Control.Monad.Random.Class.fromListMay
+  Control.Monad.Random.Class.uniform
+  Control.Monad.Random.Class.uniformMay
+  Control.Monad.Random.Class.weighted
+  Control.Monad.Random.Class.weightedMay
+  Control.Monad.Trans.Random.Lazy.evalRand
+  Control.Monad.Trans.Random.Lazy.evalRandIO
+  Control.Monad.Trans.Random.Lazy.evalRandT
+  Control.Monad.Trans.Random.Lazy.evalRandTIO
+  Control.Monad.Trans.Random.Lazy.execRand
+  Control.Monad.Trans.Random.Lazy.execRandT
+  Control.Monad.Trans.Random.Lazy.liftRand
+  Control.Monad.Trans.Random.Lazy.liftRandT
+  Control.Monad.Trans.Random.Lazy.mapRand
+  Control.Monad.Trans.Random.Lazy.mapRandT
+  Control.Monad.Trans.Random.Lazy.runRand
+  Control.Monad.Trans.Random.Lazy.runRandT
+  Control.Monad.Trans.Random.Lazy.withRand
+  Control.Monad.Trans.Random.Lazy.withRandT
+  Data.Aeson.TH.deriveFromJSON
+  Data.Aeson.TH.deriveFromJSON1
+  Data.Aeson.TH.deriveFromJSON2
+  Data.Aeson.TH.deriveJSON
+  Data.Aeson.TH.deriveJSON1
+  Data.Aeson.TH.deriveJSON2
+  Data.Aeson.TH.deriveToJSON
+  Data.Aeson.TH.deriveToJSON1
+  Data.Aeson.TH.deriveToJSON2
+  Data.Aeson.TH.mkLiftParseJSON
+  Data.Aeson.TH.mkLiftParseJSON2
+  Data.Aeson.TH.mkLiftToEncoding
+  Data.Aeson.TH.mkLiftToEncoding2
+  Data.Aeson.TH.mkLiftToJSON
+  Data.Aeson.TH.mkLiftToJSON2
+  Data.Aeson.TH.mkParseJSON
+  Data.Aeson.TH.mkToEncoding
+  Data.Aeson.TH.mkToJSON
+  Data.Aeson.Types.Internal.defaultOptions
+  Data.Aeson.Types.Internal.defaultTaggedObject
+  Control.Concurrent.Async.async
+  Control.Concurrent.Async.asyncBound
+  Control.Concurrent.Async.asyncOn
+  Control.Concurrent.Async.asyncOnWithUnmask
+  Control.Concurrent.Async.asyncWithUnmask
+  Control.Concurrent.Async.cancel
+  Control.Concurrent.Async.cancelWith
+  Control.Concurrent.Async.concurrently
+  Control.Concurrent.Async.concurrently_
+  Control.Concurrent.Async.forConcurrently
+  Control.Concurrent.Async.forConcurrently_
+  Control.Concurrent.Async.link
+  Control.Concurrent.Async.link2
+  Control.Concurrent.Async.mapConcurrently
+  Control.Concurrent.Async.mapConcurrently_
+  Control.Concurrent.Async.poll
+  Control.Concurrent.Async.pollSTM
+  Control.Concurrent.Async.race
+  Control.Concurrent.Async.race_
+  Control.Concurrent.Async.replicateConcurrently
+  Control.Concurrent.Async.replicateConcurrently_
+  Control.Concurrent.Async.uninterruptibleCancel
+  Control.Concurrent.Async.waitAny
+  Control.Concurrent.Async.waitAnyCancel
+  Control.Concurrent.Async.waitAnyCatch
+  Control.Concurrent.Async.waitAnyCatchCancel
+  Control.Concurrent.Async.waitAnyCatchSTM
+  Control.Concurrent.Async.waitAnySTM
+  Control.Concurrent.Async.waitBoth
+  Control.Concurrent.Async.waitBothSTM
+  Control.Concurrent.Async.waitCatch
+  Control.Concurrent.Async.waitCatchSTM
+  Control.Concurrent.Async.waitEither
+  Control.Concurrent.Async.waitEitherCancel
+  Control.Concurrent.Async.waitEitherCatch
+  Control.Concurrent.Async.waitEitherCatchCancel
+  Control.Concurrent.Async.waitEitherCatchSTM
+  Control.Concurrent.Async.waitEitherSTM
+  Control.Concurrent.Async.waitEitherSTM_
+  Control.Concurrent.Async.waitEither_
+  Control.Concurrent.Async.waitSTM
+  Control.Concurrent.Async.withAsync
+  Control.Concurrent.Async.withAsyncBound
+  Control.Concurrent.Async.withAsyncOn
+  Control.Concurrent.Async.withAsyncOnWithUnmask
+  Control.Concurrent.Async.withAsyncWithUnmask
+  Control.Applicative.optional
+  Control.Concurrent.forkFinally
+  Control.Concurrent.forkOS
+  Control.Concurrent.forkOSWithUnmask
+  Control.Concurrent.isCurrentThreadBound
+  Control.Concurrent.rtsSupportsBoundThreads
+  Control.Concurrent.runInBoundThread
+  Control.Concurrent.runInUnboundThread
+  Control.Concurrent.threadWaitRead
+  Control.Concurrent.threadWaitReadSTM
+  Control.Concurrent.threadWaitWrite
+  Control.Concurrent.threadWaitWriteSTM
+  Control.Concurrent.Chan.dupChan
+  Control.Concurrent.Chan.getChanContents
+  Control.Concurrent.Chan.isEmptyChan
+  Control.Concurrent.Chan.newChan
+  Control.Concurrent.Chan.readChan
+  Control.Concurrent.Chan.unGetChan
+  Control.Concurrent.Chan.writeChan
+  Control.Concurrent.Chan.writeList2Chan
+  Control.Concurrent.MVar.addMVarFinalizer
+  Control.Concurrent.MVar.mkWeakMVar
+  Control.Concurrent.MVar.modifyMVar
+  Control.Concurrent.MVar.modifyMVarMasked
+  Control.Concurrent.MVar.modifyMVarMasked_
+  Control.Concurrent.MVar.modifyMVar_
+  Control.Concurrent.MVar.swapMVar
+  Control.Concurrent.MVar.withMVar
+  Control.Concurrent.MVar.withMVarMasked
+  Control.Concurrent.QSem.newQSem
+  Control.Concurrent.QSem.signalQSem
+  Control.Concurrent.QSem.waitQSem
+  Control.Concurrent.QSemN.newQSemN
+  Control.Concurrent.QSemN.signalQSemN
+  Control.Concurrent.QSemN.waitQSemN
+  Control.Exception.allowInterrupt
+  Control.Exception.Base.bracket
+  Control.Exception.Base.bracketOnError
+  Control.Exception.Base.bracket_
+  Control.Exception.Base.catchJust
+  Control.Exception.Base.finally
+  Control.Exception.Base.handleJust
+  Control.Exception.Base.mapException
+  Control.Exception.Base.onException
+  Control.Exception.Base.tryJust
+  Control.Monad.<$!>
+  Control.Monad.<=<
+  Control.Monad.>=>
+  Control.Monad.filterM
+  Control.Monad.foldM
+  Control.Monad.foldM_
+  Control.Monad.forever
+  Control.Monad.guard
+  Control.Monad.mapAndUnzipM
+  Control.Monad.mfilter
+  Control.Monad.replicateM
+  Control.Monad.replicateM_
+  Control.Monad.unless
+  Control.Monad.zipWithM
+  Control.Monad.zipWithM_
+  Data.Bits.bitDefault
+  Data.Bits.popCountDefault
+  Data.Bits.testBitDefault
+  Data.Bits.toIntegralSized
+  Data.Char.digitToInt
+  Data.Char.isLetter
+  Data.Char.isMark
+  Data.Char.isNumber
+  Data.Char.isSeparator
+  Data.Complex.cis
+  Data.Complex.conjugate
+  Data.Complex.imagPart
+  Data.Complex.magnitude
+  Data.Complex.mkPolar
+  Data.Complex.phase
+  Data.Complex.polar
+  Data.Complex.realPart
+  Data.Either.either
+  Data.Either.isLeft
+  Data.Either.isRight
+  Data.Either.lefts
+  Data.Either.partitionEithers
+  Data.Either.rights
+  Data.Foldable.all
+  Data.Foldable.and
+  Data.Foldable.any
+  Data.Foldable.asum
+  Data.Foldable.concat
+  Data.Foldable.concatMap
+  Data.Foldable.find
+  Data.Foldable.foldlM
+  Data.Foldable.foldrM
+  Data.Foldable.forM_
+  Data.Foldable.for_
+  Data.Foldable.mapM_
+  Data.Foldable.maximumBy
+  Data.Foldable.minimumBy
+  Data.Foldable.msum
+  Data.Foldable.notElem
+  Data.Foldable.or
+  Data.Foldable.sequenceA_
+  Data.Foldable.sequence_
+  Data.Foldable.traverse_
+  Data.Function.&
+  Data.Function.fix
+  Data.Function.on
+  Data.Functor.$>
+  Data.Functor.<$>
+  Data.Functor.void
+  Data.Maybe.fromMaybe
+  Data.Maybe.isJust
+  Data.Maybe.isNothing
+  Data.Maybe.listToMaybe
+  Data.Maybe.maybe
+  Data.Maybe.maybeToList
+  Data.OldList.group
+  Data.OldList.inits
+  Data.OldList.intercalate
+  Data.OldList.intersperse
+  Data.OldList.isPrefixOf
+  Data.OldList.permutations
+  Data.OldList.sort
+  Data.OldList.sortBy
+  Data.OldList.subsequences
+  Data.OldList.tails
+  Data.OldList.transpose
+  Data.OldList.unfoldr
+  Data.Ord.comparing
+  Data.Traversable.fmapDefault
+  Data.Traversable.foldMapDefault
+  Data.Traversable.for
+  Data.Traversable.forM
+  Data.Traversable.mapAccumL
+  Data.Traversable.mapAccumR
+  Data.Tuple.curry
+  Data.Tuple.fst
+  Data.Tuple.snd
+  Data.Tuple.swap
+  Data.Tuple.uncurry
+  Data.Type.Coercion.coerceWith
+  Data.Type.Equality.castWith
+  Data.Type.Equality.gcastWith
+  Data.Type.Equality.sym
+  Data.Type.Equality.trans
+  Data.Typeable.cast
+  Data.Typeable.eqT
+  Data.Typeable.Internal.typeRep
+  Data.Void.absurd
+  Data.Void.vacuous
+  GHC.Base.++
+  GHC.Base..
+  GHC.Base.<**>
+  GHC.Base.=<<
+  GHC.Base.ap
+  GHC.Base.asTypeOf
+  GHC.Base.const
+  GHC.Base.flip
+  GHC.Base.join
+  GHC.Base.liftA
+  GHC.Base.liftA2
+  GHC.Base.liftA3
+  GHC.Base.liftM
+  GHC.Base.liftM2
+  GHC.Base.liftM3
+  GHC.Base.liftM4
+  GHC.Base.liftM5
+  GHC.Base.maxInt
+  GHC.Base.minInt
+  GHC.Base.ord
+  GHC.Base.otherwise
+  GHC.Base.when
+  GHC.Char.chr
+  GHC.Conc.IO.threadDelay
+  GHC.Conc.Sync.always
+  GHC.Conc.Sync.alwaysSucceeds
+  GHC.Conc.Sync.atomically
+  GHC.Conc.Sync.catchSTM
+  GHC.Conc.Sync.forkIO
+  GHC.Conc.Sync.forkIOWithUnmask
+  GHC.Conc.Sync.forkOn
+  GHC.Conc.Sync.forkOnWithUnmask
+  GHC.Conc.Sync.getNumCapabilities
+  GHC.Conc.Sync.killThread
+  GHC.Conc.Sync.mkWeakThreadId
+  GHC.Conc.Sync.myThreadId
+  GHC.Conc.Sync.orElse
+  GHC.Conc.Sync.retry
+  GHC.Conc.Sync.setNumCapabilities
+  GHC.Conc.Sync.threadCapability
+  GHC.Conc.Sync.throwSTM
+  GHC.Enum.boundedEnumFrom
+  GHC.Enum.boundedEnumFromThen
+  GHC.Enum.fromEnumError
+  GHC.Enum.predError
+  GHC.Enum.succError
+  GHC.Enum.toEnumError
+  GHC.Err.error
+  GHC.Exception.prettyCallStack
+  GHC.Exception.prettySrcLoc
+  GHC.ExecutionStack.getStackTrace
+  GHC.ExecutionStack.showStackTrace
+  GHC.Float.acosDouble
+  GHC.Float.acosFloat
+  GHC.Float.asinDouble
+  GHC.Float.asinFloat
+  GHC.Float.atanDouble
+  GHC.Float.atanFloat
+  GHC.Float.clamp
+  GHC.Float.cosDouble
+  GHC.Float.cosFloat
+  GHC.Float.coshDouble
+  GHC.Float.coshFloat
+  GHC.Float.divideDouble
+  GHC.Float.divideFloat
+  GHC.Float.double2Float
+  GHC.Float.expDouble
+  GHC.Float.expFloat
+  GHC.Float.expm1Double
+  GHC.Float.expm1Float
+  GHC.Float.expt
+  GHC.Float.expts
+  GHC.Float.expts10
+  GHC.Float.float2Double
+  GHC.Float.floatToDigits
+  GHC.Float.formatRealFloat
+  GHC.Float.formatRealFloatAlt
+  GHC.Float.fromRat
+  GHC.Float.fromRat'
+  GHC.Float.fromRat''
+  GHC.Float.geDouble
+  GHC.Float.geFloat
+  GHC.Float.gtDouble
+  GHC.Float.gtFloat
+  GHC.Float.integerLogBase
+  GHC.Float.isDoubleDenormalized
+  GHC.Float.isDoubleFinite
+  GHC.Float.isDoubleInfinite
+  GHC.Float.isDoubleNaN
+  GHC.Float.isDoubleNegativeZero
+  GHC.Float.isFloatDenormalized
+  GHC.Float.isFloatFinite
+  GHC.Float.isFloatInfinite
+  GHC.Float.isFloatNaN
+  GHC.Float.isFloatNegativeZero
+  GHC.Float.leDouble
+  GHC.Float.leFloat
+  GHC.Float.log1pDouble
+  GHC.Float.log1pFloat
+  GHC.Float.logDouble
+  GHC.Float.logFloat
+  GHC.Float.ltDouble
+  GHC.Float.ltFloat
+  GHC.Float.maxExpt
+  GHC.Float.maxExpt10
+  GHC.Float.minExpt
+  GHC.Float.minusDouble
+  GHC.Float.minusFloat
+  GHC.Float.negateDouble
+  GHC.Float.negateFloat
+  GHC.Float.plusDouble
+  GHC.Float.plusFloat
+  GHC.Float.powerDouble
+  GHC.Float.powerFloat
+  GHC.Float.rationalToDouble
+  GHC.Float.rationalToFloat
+  GHC.Float.roundTo
+  GHC.Float.sinDouble
+  GHC.Float.sinFloat
+  GHC.Float.sinhDouble
+  GHC.Float.sinhFloat
+  GHC.Float.sqrtDouble
+  GHC.Float.sqrtFloat
+  GHC.Float.tanDouble
+  GHC.Float.tanFloat
+  GHC.Float.tanhDouble
+  GHC.Float.tanhFloat
+  GHC.Float.timesDouble
+  GHC.Float.timesFloat
+  GHC.Float.word2Double
+  GHC.Float.word2Float
+  GHC.Float.RealFracMethods.double2Int
+  GHC.Float.RealFracMethods.float2Int
+  GHC.Float.RealFracMethods.int2Double
+  GHC.Float.RealFracMethods.int2Float
+  GHC.IO.evaluate
+  GHC.IO.getMaskingState
+  GHC.IO.interruptible
+  GHC.IO.mask
+  GHC.IO.mask_
+  GHC.IO.stToIO
+  GHC.IO.uninterruptibleMask
+  GHC.IO.uninterruptibleMask_
+  GHC.IO.Exception.asyncExceptionFromException
+  GHC.IO.Exception.asyncExceptionToException
+  GHC.IO.Exception.ioError
+  GHC.IO.Handle.FD.openFile
+  GHC.IO.Handle.FD.stderr
+  GHC.IO.Handle.FD.stdin
+  GHC.IO.Handle.FD.stdout
+  GHC.List.break
+  GHC.List.cycle
+  GHC.List.drop
+  GHC.List.dropWhile
+  GHC.List.iterate
+  GHC.List.repeat
+  GHC.List.replicate
+  GHC.List.reverse
+  GHC.List.scanl
+  GHC.List.scanr
+  GHC.List.splitAt
+  GHC.List.take
+  GHC.List.takeWhile
+  GHC.List.zip
+  GHC.List.zipWith
+  GHC.MVar.isEmptyMVar
+  GHC.MVar.newEmptyMVar
+  GHC.MVar.newMVar
+  GHC.MVar.putMVar
+  GHC.MVar.readMVar
+  GHC.MVar.takeMVar
+  GHC.MVar.tryPutMVar
+  GHC.MVar.tryReadMVar
+  GHC.MVar.tryTakeMVar
+  GHC.Num.subtract
+  GHC.Read.lexLitChar
+  GHC.Read.readLitChar
+  GHC.Real.%
+  GHC.Real.^
+  GHC.Real.^%^
+  GHC.Real.^^
+  GHC.Real.^^%^^
+  GHC.Real.denominator
+  GHC.Real.divZeroError
+  GHC.Real.even
+  GHC.Real.fromIntegral
+  GHC.Real.gcd
+  GHC.Real.gcdInt'
+  GHC.Real.gcdWord'
+  GHC.Real.infinity
+  GHC.Real.integralEnumFrom
+  GHC.Real.integralEnumFromThen
+  GHC.Real.integralEnumFromThenTo
+  GHC.Real.integralEnumFromTo
+  GHC.Real.lcm
+  GHC.Real.notANumber
+  GHC.Real.numerator
+  GHC.Real.numericEnumFrom
+  GHC.Real.numericEnumFromThen
+  GHC.Real.numericEnumFromThenTo
+  GHC.Real.numericEnumFromTo
+  GHC.Real.odd
+  GHC.Real.overflowError
+  GHC.Real.ratioPrec
+  GHC.Real.ratioPrec1
+  GHC.Real.ratioZeroDenominatorError
+  GHC.Real.realToFrac
+  GHC.Real.reduce
+  GHC.ST.fixST
+  GHC.ST.runST
+  GHC.Show.intToDigit
+  GHC.Show.showLitChar
+  GHC.Stack.callStack
+  GHC.Stack.CCS.currentCallStack
+  GHC.Stack.Types.getCallStack
+  GHC.Unicode.generalCategory
+  GHC.Unicode.isAlpha
+  GHC.Unicode.isAlphaNum
+  GHC.Unicode.isAscii
+  GHC.Unicode.isAsciiLower
+  GHC.Unicode.isAsciiUpper
+  GHC.Unicode.isControl
+  GHC.Unicode.isDigit
+  GHC.Unicode.isHexDigit
+  GHC.Unicode.isLatin1
+  GHC.Unicode.isLower
+  GHC.Unicode.isOctDigit
+  GHC.Unicode.isPrint
+  GHC.Unicode.isPunctuation
+  GHC.Unicode.isSpace
+  GHC.Unicode.isSymbol
+  GHC.Unicode.isUpper
+  GHC.Unicode.toLower
+  GHC.Unicode.toTitle
+  GHC.Unicode.toUpper
+  GHC.Word.byteSwap16
+  GHC.Word.byteSwap32
+  GHC.Word.byteSwap64
+  System.Environment.getArgs
+  System.Exit.die
+  System.Exit.exitFailure
+  System.Exit.exitSuccess
+  System.Exit.exitWith
+  System.IO.withFile
+  Text.Read.readEither
+  Text.Read.readMaybe
+  Text.Read.reads
+  Control.DeepSeq.$!!
+  Control.DeepSeq.deepseq
+  Control.DeepSeq.force
+  Control.Monad.Catch.catchIf
+  Control.Monad.Catch.catches
+  Control.Monad.Catch.handle
+  Control.Monad.Catch.handleIf
+  Control.Monad.Catch.try
+  GHC.Classes.&&
+  GHC.Classes.eqDouble
+  GHC.Classes.eqFloat
+  GHC.Classes.not
+  GHC.Classes.||
+  GHC.Integer.Type.absInteger
+  GHC.Integer.Type.andInteger
+  GHC.Integer.Type.compareInteger
+  GHC.Integer.Type.complementInteger
+  GHC.Integer.Type.decodeDoubleInteger
+  GHC.Integer.Type.divInteger
+  GHC.Integer.Type.divModInteger
+  GHC.Integer.Type.doubleFromInteger
+  GHC.Integer.Type.encodeDoubleInteger
+  GHC.Integer.Type.encodeFloatInteger
+  GHC.Integer.Type.eqInteger
+  GHC.Integer.Type.eqInteger#
+  GHC.Integer.Type.floatFromInteger
+  GHC.Integer.Type.geInteger
+  GHC.Integer.Type.geInteger#
+  GHC.Integer.Type.gtInteger
+  GHC.Integer.Type.gtInteger#
+  GHC.Integer.Type.hashInteger
+  GHC.Integer.Type.integerToInt
+  GHC.Integer.Type.integerToWord
+  GHC.Integer.Type.leInteger
+  GHC.Integer.Type.leInteger#
+  GHC.Integer.Type.ltInteger
+  GHC.Integer.Type.ltInteger#
+  GHC.Integer.Type.minusInteger
+  GHC.Integer.Type.mkInteger
+  GHC.Integer.Type.modInteger
+  GHC.Integer.Type.negateInteger
+  GHC.Integer.Type.neqInteger
+  GHC.Integer.Type.neqInteger#
+  GHC.Integer.Type.orInteger
+  GHC.Integer.Type.plusInteger
+  GHC.Integer.Type.quotInteger
+  GHC.Integer.Type.quotRemInteger
+  GHC.Integer.Type.remInteger
+  GHC.Integer.Type.shiftLInteger
+  GHC.Integer.Type.shiftRInteger
+  GHC.Integer.Type.signumInteger
+  GHC.Integer.Type.smallInteger
+  GHC.Integer.Type.testBitInteger
+  GHC.Integer.Type.timesInteger
+  GHC.Integer.Type.wordToInteger
+  GHC.Integer.Type.xorInteger
+  Interlude.noWarnUndefined
+  Interlude.perror
+  Interlude.perrorToFile
+  Interlude.pread
+  Interlude.pshow
+  Interlude.unsafeHead
+  Interlude.unsafeInit
+  Interlude.unsafeLast
+  Interlude.unsafeTail
+  Control.Lens.Cons.<|
+  Control.Lens.Cons.|>
+  Control.Lens.Fold.^..
+  Control.Lens.Fold.^?
+  Control.Lens.Fold.^?!
+  Control.Lens.Fold.^@..
+  Control.Lens.Fold.^@?
+  Control.Lens.Fold.^@?!
+  Control.Lens.Getter.^.
+  Control.Lens.Getter.^@.
+  Control.Lens.Getter.view
+  Control.Lens.Indexed..>
+  Control.Lens.Indexed.<.
+  Control.Lens.Indexed.<.>
+  Control.Lens.Internal.PrismTH.makeClassyPrisms
+  Control.Lens.Internal.PrismTH.makePrisms
+  Control.Lens.Lens.#%%=
+  Control.Lens.Lens.#%%~
+  Control.Lens.Lens.#%=
+  Control.Lens.Lens.#%~
+  Control.Lens.Lens.#=
+  Control.Lens.Lens.#~
+  Control.Lens.Lens.%%=
+  Control.Lens.Lens.%%@=
+  Control.Lens.Lens.%%@~
+  Control.Lens.Lens.%%~
+  Control.Lens.Lens.&~
+  Control.Lens.Lens.<#%=
+  Control.Lens.Lens.<#%~
+  Control.Lens.Lens.<#=
+  Control.Lens.Lens.<#~
+  Control.Lens.Lens.<%=
+  Control.Lens.Lens.<%@=
+  Control.Lens.Lens.<%@~
+  Control.Lens.Lens.<%~
+  Control.Lens.Lens.<&&=
+  Control.Lens.Lens.<&&~
+  Control.Lens.Lens.<&>
+  Control.Lens.Lens.<**=
+  Control.Lens.Lens.<**~
+  Control.Lens.Lens.<*=
+  Control.Lens.Lens.<*~
+  Control.Lens.Lens.<+=
+  Control.Lens.Lens.<+~
+  Control.Lens.Lens.<-=
+  Control.Lens.Lens.<-~
+  Control.Lens.Lens.<//=
+  Control.Lens.Lens.<//~
+  Control.Lens.Lens.<<%=
+  Control.Lens.Lens.<<%@=
+  Control.Lens.Lens.<<%@~
+  Control.Lens.Lens.<<%~
+  Control.Lens.Lens.<<&&=
+  Control.Lens.Lens.<<&&~
+  Control.Lens.Lens.<<**=
+  Control.Lens.Lens.<<**~
+  Control.Lens.Lens.<<*=
+  Control.Lens.Lens.<<*~
+  Control.Lens.Lens.<<+=
+  Control.Lens.Lens.<<+~
+  Control.Lens.Lens.<<-=
+  Control.Lens.Lens.<<-~
+  Control.Lens.Lens.<<.=
+  Control.Lens.Lens.<<.~
+  Control.Lens.Lens.<<//=
+  Control.Lens.Lens.<<//~
+  Control.Lens.Lens.<<<>=
+  Control.Lens.Lens.<<<>~
+  Control.Lens.Lens.<<>=
+  Control.Lens.Lens.<<>~
+  Control.Lens.Lens.<<?=
+  Control.Lens.Lens.<<?~
+  Control.Lens.Lens.<<^=
+  Control.Lens.Lens.<<^^=
+  Control.Lens.Lens.<<^^~
+  Control.Lens.Lens.<<^~
+  Control.Lens.Lens.<<||=
+  Control.Lens.Lens.<<||~
+  Control.Lens.Lens.<<~
+  Control.Lens.Lens.<^=
+  Control.Lens.Lens.<^^=
+  Control.Lens.Lens.<^^~
+  Control.Lens.Lens.<^~
+  Control.Lens.Lens.<||=
+  Control.Lens.Lens.<||~
+  Control.Lens.Lens.??
+  Control.Lens.Lens.^#
+  Control.Lens.Plated....
+  Control.Lens.Review.#
+  Control.Lens.Setter.%=
+  Control.Lens.Setter.%@=
+  Control.Lens.Setter.%@~
+  Control.Lens.Setter.%~
+  Control.Lens.Setter.&&=
+  Control.Lens.Setter.&&~
+  Control.Lens.Setter.**=
+  Control.Lens.Setter.**~
+  Control.Lens.Setter.*=
+  Control.Lens.Setter.*~
+  Control.Lens.Setter.+=
+  Control.Lens.Setter.+~
+  Control.Lens.Setter.-=
+  Control.Lens.Setter.-~
+  Control.Lens.Setter..=
+  Control.Lens.Setter..@=
+  Control.Lens.Setter..@~
+  Control.Lens.Setter..~
+  Control.Lens.Setter.//=
+  Control.Lens.Setter.//~
+  Control.Lens.Setter.<.=
+  Control.Lens.Setter.<.~
+  Control.Lens.Setter.<>=
+  Control.Lens.Setter.<>~
+  Control.Lens.Setter.<?=
+  Control.Lens.Setter.<?~
+  Control.Lens.Setter.<~
+  Control.Lens.Setter.?=
+  Control.Lens.Setter.?~
+  Control.Lens.Setter.^=
+  Control.Lens.Setter.^^=
+  Control.Lens.Setter.^^~
+  Control.Lens.Setter.^~
+  Control.Lens.Setter.||=
+  Control.Lens.Setter.||~
+  Control.Lens.TH.abbreviatedFields
+  Control.Lens.TH.abbreviatedNamer
+  Control.Lens.TH.camelCaseFields
+  Control.Lens.TH.camelCaseNamer
+  Control.Lens.TH.classUnderscoreNoPrefixFields
+  Control.Lens.TH.classUnderscoreNoPrefixNamer
+  Control.Lens.TH.classyRules
+  Control.Lens.TH.classyRules_
+  Control.Lens.TH.createClass
+  Control.Lens.TH.declareClassy
+  Control.Lens.TH.declareClassyFor
+  Control.Lens.TH.declareFields
+  Control.Lens.TH.declareLenses
+  Control.Lens.TH.declareLensesFor
+  Control.Lens.TH.declareLensesWith
+  Control.Lens.TH.declarePrisms
+  Control.Lens.TH.declareWrapped
+  Control.Lens.TH.defaultFieldRules
+  Control.Lens.TH.generateLazyPatterns
+  Control.Lens.TH.generateSignatures
+  Control.Lens.TH.generateUpdateableOptics
+  Control.Lens.TH.lensClass
+  Control.Lens.TH.lensField
+  Control.Lens.TH.lensRules
+  Control.Lens.TH.lensRulesFor
+  Control.Lens.TH.lookingupNamer
+  Control.Lens.TH.makeClassy
+  Control.Lens.TH.makeClassyFor
+  Control.Lens.TH.makeClassy_
+  Control.Lens.TH.makeFields
+  Control.Lens.TH.makeFieldsNoPrefix
+  Control.Lens.TH.makeLenses
+  Control.Lens.TH.makeLensesFor
+  Control.Lens.TH.makeLensesWith
+  Control.Lens.TH.makeWrapped
+  Control.Lens.TH.mappingNamer
+  Control.Lens.TH.simpleLenses
+  Control.Lens.TH.underscoreFields
+  Control.Lens.TH.underscoreNamer
+  Control.Lens.TH.underscoreNoPrefixNamer
+  Control.Monad.Reader.Class.asks
+  Control.Monad.State.Class.gets
+  Control.Monad.State.Class.modify
+  Control.Monad.State.Class.modify'
+  Applicative.<<*>>
+  Applicative.eitherA
+  Applicative.liftAA2
+  Applicative.orAlt
+  Applicative.orEmpty
+  Applicative.purer
+  Base.$!
+  Bool.bool
+  Bool.guardM
+  Bool.ifM
+  Bool.unlessM
+  Bool.whenM
+  Conv.toS
+  Conv.toSL
+  Debug.notImplemented
+  Debug.trace
+  Debug.traceIO
+  Debug.traceId
+  Debug.traceM
+  Debug.traceShow
+  Debug.traceShowId
+  Debug.traceShowM
+  Debug.undefined
+  Either.leftToMaybe
+  Either.maybeToEither
+  Either.maybeToLeft
+  Either.maybeToRight
+  Either.rightToMaybe
+  Exceptions.hush
+  Exceptions.note
+  Exceptions.tryIO
+  List.head
+  List.list
+  List.product
+  List.sortOn
+  List.sum
+  Monad.concatMapM
+  Monad.liftM'
+  Monad.liftM2'
+  Panic.panic
+  Protolude.applyN
+  Protolude.foreach
+  Protolude.guarded
+  Protolude.guardedA
+  Protolude.identity
+  Protolude.map
+  Protolude.pass
+  Protolude.print
+  Protolude.show
+  Protolude.throwIO
+  Protolude.throwTo
+  Protolude.uncons
+  Protolude.unsnoc
+  Semiring.zero
+  Show.putLText
+  Show.putText
+  System.Random.getStdGen
+  System.Random.getStdRandom
+  System.Random.mkStdGen
+  System.Random.newStdGen
+  System.Random.setStdGen
+  Safe.atDef
+  Safe.atMay
+  Safe.foldl1May
+  Safe.foldr1May
+  Safe.headDef
+  Safe.headMay
+  Safe.initDef
+  Safe.initMay
+  Safe.initSafe
+  Safe.lastDef
+  Safe.lastMay
+  Safe.tailDef
+  Safe.tailMay
+  Safe.tailSafe
+  Control.Monad.STM.check
+  Data.Text.Encoding.decodeUtf8
+  Data.Text.Encoding.decodeUtf8'
+  Data.Text.Encoding.decodeUtf8With
+  Data.Text.Encoding.encodeUtf8
+  Data.Text.IO.appendFile
+  Data.Text.IO.getContents
+  Data.Text.IO.getLine
+  Data.Text.IO.interact
+  Data.Text.IO.readFile
+  Data.Text.IO.writeFile
+  Data.Text.Lazy.fromStrict
+  Data.Text.Lazy.toStrict
+  Control.Monad.Trans.Except.runExcept
+  Control.Monad.Trans.Except.runExceptT
+  Control.Monad.Trans.Reader.runReader
+  Control.Monad.Trans.State.Lazy.evalState
+  Control.Monad.Trans.State.Lazy.evalStateT
+  Control.Monad.Trans.State.Lazy.execState
+  Control.Monad.Trans.State.Lazy.execStateT
+  Control.Monad.Trans.State.Lazy.runState
+  Control.Monad.Trans.State.Lazy.withState
+  Data.Witherable.blightM
+  Data.Witherable.catMaybesOf
+  Data.Witherable.cloneFilter
+  Data.Witherable.filterAOf
+  Data.Witherable.filterOf
+  Data.Witherable.forMaybe
+  Data.Witherable.forMaybeOf
+  Data.Witherable.hashNub
+  Data.Witherable.hashNubOf
+  Data.Witherable.mapMaybeOf
+  Data.Witherable.ordNub
+  Data.Witherable.ordNubOf
+  Data.Witherable.witherM
+  Data.Witherable.witherOf
+  GHC.Base.$
+  GHC.Prim.coerce
+  GHC.Prim.seq
+  Control.Monad.Random.Class.MonadInterleave{Control.Monad.Random.Class.interleave}
+  Control.Monad.Random.Class.MonadRandom{Control.Monad.Random.Class.getRandom Control.Monad.Random.Class.getRandomR Control.Monad.Random.Class.getRandomRs Control.Monad.Random.Class.getRandoms}
+  Control.Monad.Random.Class.MonadSplit{Control.Monad.Random.Class.getSplit}
+  Control.Monad.Trans.Random.Lazy.Rand
+  Control.Monad.Trans.Random.Lazy.RandT
+  Data.Aeson.Types.FromJSON.FromJSON
+  Data.Aeson.Types.Internal.Options{Data.Aeson.Types.Internal.Options allNullaryToStringTag constructorTagModifier fieldLabelModifier omitNothingFields sumEncoding unwrapUnaryRecords}
+  Data.Aeson.Types.Internal.SumEncoding{Data.Aeson.Types.Internal.ObjectWithSingleField Data.Aeson.Types.Internal.TaggedObject Data.Aeson.Types.Internal.TwoElemArray Data.Aeson.Types.Internal.UntaggedValue contentsFieldName tagFieldName}
+  Data.Aeson.Types.ToJSON.ToJSON
+  Control.Concurrent.Async.Async{asyncThreadId}
+  Control.Concurrent.Async.Concurrently{Control.Concurrent.Async.Concurrently runConcurrently}
+  Control.Applicative.ZipList{Control.Applicative.ZipList getZipList}
+  Control.Concurrent.Chan.Chan
+  Control.Concurrent.QSem.QSem
+  Control.Concurrent.QSemN.QSemN
+  Control.Exception.Base.NestedAtomically{Control.Exception.Base.NestedAtomically}
+  Control.Exception.Base.NoMethodError{Control.Exception.Base.NoMethodError}
+  Control.Exception.Base.NonTermination{Control.Exception.Base.NonTermination}
+  Control.Exception.Base.PatternMatchFail{Control.Exception.Base.PatternMatchFail}
+  Control.Exception.Base.RecConError{Control.Exception.Base.RecConError}
+  Control.Exception.Base.RecSelError{Control.Exception.Base.RecSelError}
+  Control.Exception.Base.RecUpdError{Control.Exception.Base.RecUpdError}
+  Control.Exception.Base.TypeError{Control.Exception.Base.TypeError}
+  Control.Monad.Fix.MonadFix{Control.Monad.Fix.mfix}
+  Control.Monad.IO.Class.MonadIO{Control.Monad.IO.Class.liftIO}
+  Data.Bifunctor.Bifunctor{Data.Bifunctor.bimap Data.Bifunctor.first Data.Bifunctor.second}
+  Data.Bits.Bits{Data.Bits..&. Data.Bits..|. Data.Bits.bit Data.Bits.bitSize Data.Bits.bitSizeMaybe Data.Bits.clearBit Data.Bits.complement Data.Bits.complementBit Data.Bits.isSigned Data.Bits.popCount Data.Bits.rotate Data.Bits.rotateL Data.Bits.rotateR Data.Bits.setBit Data.Bits.shift Data.Bits.shiftL Data.Bits.shiftR Data.Bits.testBit Data.Bits.xor Data.Bits.zeroBits}
+  Data.Bits.FiniteBits{Data.Bits.countLeadingZeros Data.Bits.countTrailingZeros Data.Bits.finiteBitSize}
+  Data.Complex.Complex{Data.Complex.:+}
+  Data.Either.Either{Data.Either.Left Data.Either.Right}
+  Data.Foldable.Foldable{Data.Foldable.elem Data.Foldable.fold Data.Foldable.foldMap Data.Foldable.foldl Data.Foldable.foldl' Data.Foldable.foldr Data.Foldable.foldr' Data.Foldable.length Data.Foldable.maximum Data.Foldable.minimum Data.Foldable.null Data.Foldable.toList}
+  Data.Functor.Const.Const{Data.Functor.Const.Const getConst}
+  Data.Functor.Identity.Identity{Data.Functor.Identity.Identity runIdentity}
+  Data.Monoid.All{Data.Monoid.All getAll}
+  Data.Monoid.Alt{Data.Monoid.Alt getAlt}
+  Data.Monoid.Any{Data.Monoid.Any getAny}
+  Data.Monoid.Dual{Data.Monoid.Dual getDual}
+  Data.Monoid.Endo{Data.Monoid.Endo appEndo}
+  Data.Monoid.First{Data.Monoid.First getFirst}
+  Data.Monoid.Last{Data.Monoid.Last getLast}
+  Data.Monoid.Product{Data.Monoid.Product getProduct}
+  Data.Monoid.Sum{Data.Monoid.Sum getSum}
+  Data.Ord.Down{Data.Ord.Down}
+  Data.Proxy.Proxy{Data.Proxy.Proxy}
+  Data.Semigroup.Semigroup{Data.Semigroup.<> Data.Semigroup.sconcat Data.Semigroup.stimes}
+  Data.String.IsString
+  Data.Traversable.Traversable{Data.Traversable.mapM Data.Traversable.sequence Data.Traversable.sequenceA Data.Traversable.traverse}
+  Data.Type.Coercion.Coercion{Data.Type.Coercion.Coercion}
+  Data.Type.Equality.:~:{Data.Type.Equality.Refl}
+  Data.Type.Equality.==
+  Data.Typeable.Internal.TypeRep
+  Data.Typeable.Internal.Typeable
+  Data.Void.Void
+  Foreign.Storable.Storable
+  GHC.Base.Alternative{GHC.Base.<|> GHC.Base.empty GHC.Base.many GHC.Base.some}
+  GHC.Base.Applicative{GHC.Base.*> GHC.Base.<* GHC.Base.<*> GHC.Base.pure}
+  GHC.Base.Functor{GHC.Base.<$ GHC.Base.fmap}
+  GHC.Base.Monad{GHC.Base.>> GHC.Base.>>= GHC.Base.fail GHC.Base.return}
+  GHC.Base.MonadPlus{GHC.Base.mplus GHC.Base.mzero}
+  GHC.Base.Monoid{GHC.Base.mappend GHC.Base.mconcat GHC.Base.mempty}
+  GHC.Conc.Sync.STM
+  GHC.Conc.Sync.ThreadId
+  GHC.Enum.Bounded{GHC.Enum.maxBound GHC.Enum.minBound}
+  GHC.Enum.Enum{GHC.Enum.enumFrom GHC.Enum.enumFromThen GHC.Enum.enumFromThenTo GHC.Enum.enumFromTo GHC.Enum.fromEnum GHC.Enum.pred GHC.Enum.succ GHC.Enum.toEnum}
+  GHC.Exception.ArithException{GHC.Exception.Denormal GHC.Exception.DivideByZero GHC.Exception.LossOfPrecision GHC.Exception.Overflow GHC.Exception.RatioZeroDenominator GHC.Exception.Underflow}
+  GHC.Exception.ErrorCall{GHC.Exception.ErrorCall GHC.Exception.ErrorCallWithLocation}
+  GHC.Exception.Exception{GHC.Exception.fromException GHC.Exception.toException}
+  GHC.Exception.SomeException{GHC.Exception.SomeException}
+  GHC.ExecutionStack.Internal.Location{GHC.ExecutionStack.Internal.Location functionName objectName srcLoc}
+  GHC.ExecutionStack.Internal.SrcLoc{GHC.ExecutionStack.Internal.SrcLoc sourceColumn sourceFile sourceLine}
+  GHC.Float.FFFormat{GHC.Float.FFExponent GHC.Float.FFFixed GHC.Float.FFGeneric}
+  GHC.Float.Floating{GHC.Float.** GHC.Float.acos GHC.Float.acosh GHC.Float.asin GHC.Float.asinh GHC.Float.atan GHC.Float.atanh GHC.Float.cos GHC.Float.cosh GHC.Float.exp GHC.Float.expm1 GHC.Float.log GHC.Float.log1mexp GHC.Float.log1p GHC.Float.log1pexp GHC.Float.logBase GHC.Float.pi GHC.Float.sin GHC.Float.sinh GHC.Float.sqrt GHC.Float.tan GHC.Float.tanh}
+  GHC.Float.RealFloat{GHC.Float.atan2 GHC.Float.decodeFloat GHC.Float.encodeFloat GHC.Float.exponent GHC.Float.floatDigits GHC.Float.floatRadix GHC.Float.floatRange GHC.Float.isDenormalized GHC.Float.isIEEE GHC.Float.isInfinite GHC.Float.isNaN GHC.Float.isNegativeZero GHC.Float.scaleFloat GHC.Float.significand}
+  GHC.Generics.:*:
+  GHC.Generics.:+:
+  GHC.Generics.C1
+  GHC.Generics.Constructor{GHC.Generics.conFixity GHC.Generics.conIsRecord GHC.Generics.conName}
+  GHC.Generics.D1
+  GHC.Generics.Fixity{GHC.Generics.Infix GHC.Generics.Prefix}
+  GHC.Generics.Generic{GHC.Generics.Rep GHC.Generics.from GHC.Generics.to}
+  GHC.Generics.K1{GHC.Generics.K1 unK1}
+  GHC.Generics.M1{GHC.Generics.M1 unM1}
+  GHC.Generics.Meta{GHC.Generics.MetaCons GHC.Generics.MetaData GHC.Generics.MetaSel}
+  GHC.Generics.Rec0
+  GHC.Generics.S1
+  GHC.Generics.Selector{GHC.Generics.selDecidedStrictness GHC.Generics.selName GHC.Generics.selSourceStrictness GHC.Generics.selSourceUnpackedness}
+  GHC.Generics.U1{GHC.Generics.U1}
+  GHC.Generics.V1
+  GHC.IO.FilePath
+  GHC.IO.MaskingState{GHC.IO.MaskedInterruptible GHC.IO.MaskedUninterruptible GHC.IO.Unmasked}
+  GHC.IO.Exception.AllocationLimitExceeded{GHC.IO.Exception.AllocationLimitExceeded}
+  GHC.IO.Exception.ArrayException{GHC.IO.Exception.IndexOutOfBounds GHC.IO.Exception.UndefinedElement}
+  GHC.IO.Exception.AssertionFailed{GHC.IO.Exception.AssertionFailed}
+  GHC.IO.Exception.AsyncException{GHC.IO.Exception.HeapOverflow GHC.IO.Exception.StackOverflow GHC.IO.Exception.ThreadKilled GHC.IO.Exception.UserInterrupt}
+  GHC.IO.Exception.BlockedIndefinitelyOnMVar{GHC.IO.Exception.BlockedIndefinitelyOnMVar}
+  GHC.IO.Exception.BlockedIndefinitelyOnSTM{GHC.IO.Exception.BlockedIndefinitelyOnSTM}
+  GHC.IO.Exception.Deadlock{GHC.IO.Exception.Deadlock}
+  GHC.IO.Exception.ExitCode{GHC.IO.Exception.ExitFailure GHC.IO.Exception.ExitSuccess}
+  GHC.IO.Exception.IOException
+  GHC.IO.Exception.SomeAsyncException{GHC.IO.Exception.SomeAsyncException}
+  GHC.IO.Handle.Types.Handle
+  GHC.IO.IOMode.IOMode{GHC.IO.IOMode.AppendMode GHC.IO.IOMode.ReadMode GHC.IO.IOMode.ReadWriteMode GHC.IO.IOMode.WriteMode}
+  GHC.Int.Int16
+  GHC.Int.Int32
+  GHC.Int.Int64
+  GHC.Int.Int8
+  GHC.MVar.MVar
+  GHC.Num.Num{GHC.Num.* GHC.Num.+ GHC.Num.- GHC.Num.abs GHC.Num.fromInteger GHC.Num.negate GHC.Num.signum}
+  GHC.OverloadedLabels.IsLabel{GHC.OverloadedLabels.fromLabel}
+  GHC.Ptr.FunPtr
+  GHC.Ptr.Ptr
+  GHC.Read.Read
+  GHC.Real.Fractional{GHC.Real./ GHC.Real.fromRational GHC.Real.recip}
+  GHC.Real.Integral{GHC.Real.div GHC.Real.divMod GHC.Real.mod GHC.Real.quot GHC.Real.quotRem GHC.Real.rem GHC.Real.toInteger}
+  GHC.Real.Ratio{GHC.Real.:%}
+  GHC.Real.Rational
+  GHC.Real.Real{GHC.Real.toRational}
+  GHC.Real.RealFrac{GHC.Real.ceiling GHC.Real.floor GHC.Real.properFraction GHC.Real.round GHC.Real.truncate}
+  GHC.ST.ST
+  GHC.Show.Show
+  GHC.Stack.Types.CallStack
+  GHC.Stack.Types.HasCallStack
+  GHC.Unicode.GeneralCategory{GHC.Unicode.ClosePunctuation GHC.Unicode.ConnectorPunctuation GHC.Unicode.Control GHC.Unicode.CurrencySymbol GHC.Unicode.DashPunctuation GHC.Unicode.DecimalNumber GHC.Unicode.EnclosingMark GHC.Unicode.FinalQuote GHC.Unicode.Format GHC.Unicode.InitialQuote GHC.Unicode.LetterNumber GHC.Unicode.LineSeparator GHC.Unicode.LowercaseLetter GHC.Unicode.MathSymbol GHC.Unicode.ModifierLetter GHC.Unicode.ModifierSymbol GHC.Unicode.NonSpacingMark GHC.Unicode.NotAssigned GHC.Unicode.OpenPunctuation GHC.Unicode.OtherLetter GHC.Unicode.OtherNumber GHC.Unicode.OtherPunctuation GHC.Unicode.OtherSymbol GHC.Unicode.ParagraphSeparator GHC.Unicode.PrivateUse GHC.Unicode.Space GHC.Unicode.SpacingCombiningMark GHC.Unicode.Surrogate GHC.Unicode.TitlecaseLetter GHC.Unicode.UppercaseLetter}
+  GHC.Word.Word16
+  GHC.Word.Word32
+  GHC.Word.Word64
+  Data.ByteString.Internal.ByteString
+  Data.IntMap.Base.IntMap
+  Data.IntSet.Base.IntSet
+  Data.Map.Base.Map
+  Data.Sequence.Seq
+  Data.Set.Base.Set
+  Control.DeepSeq.NFData{Control.DeepSeq.rnf}
+  Control.Monad.Catch.Handler{Control.Monad.Catch.Handler}
+  Control.Monad.Catch.MonadCatch{Control.Monad.Catch.catch}
+  Control.Monad.Catch.MonadThrow{Control.Monad.Catch.throwM}
+  GHC.Classes.Eq{GHC.Classes./= GHC.Classes.==}
+  GHC.Classes.Ord{GHC.Classes.< GHC.Classes.<= GHC.Classes.> GHC.Classes.>= GHC.Classes.compare GHC.Classes.max GHC.Classes.min}
+  GHC.Types.IO
+  GHC.Types.Ordering{GHC.Types.EQ GHC.Types.GT GHC.Types.LT}
+  GHC.Integer.Type.Integer
+  Control.Lens.Internal.FieldTH.ClassyNamer
+  Control.Lens.Internal.FieldTH.DefName{Control.Lens.Internal.FieldTH.MethodName Control.Lens.Internal.FieldTH.TopName}
+  Control.Lens.Internal.FieldTH.FieldNamer
+  Control.Lens.Internal.FieldTH.LensRules
+  Control.Monad.Trans.Control.MonadBaseControl
+  Control.Monad.Trans.Control.MonadTransControl
+  Control.Monad.Error.Class.MonadError{Control.Monad.Error.Class.catchError Control.Monad.Error.Class.throwError}
+  Control.Monad.Reader.Class.MonadReader{Control.Monad.Reader.Class.ask Control.Monad.Reader.Class.local Control.Monad.Reader.Class.reader}
+  Control.Monad.State.Class.MonadState{Control.Monad.State.Class.get Control.Monad.State.Class.put Control.Monad.State.Class.state}
+  Conv.Leniency{Conv.Lenient Conv.Strict}
+  Conv.StringConv{Conv.strConv}
+  Panic.FatalError{Panic.FatalError msg}
+  Protolude.LByteString
+  Protolude.LText
+  Semiring.Semiring{Semiring.one}
+  Show.Print{Show.putStr Show.putStrLn}
+  System.Random.Random{System.Random.random System.Random.randomIO System.Random.randomR System.Random.randomRIO System.Random.randomRs System.Random.randoms}
+  System.Random.RandomGen{System.Random.genRange System.Random.next System.Random.split}
+  System.Random.StdGen
+  Data.Text.Internal.Text
+  Control.Monad.Trans.Class.MonadTrans{Control.Monad.Trans.Class.lift}
+  Control.Monad.Trans.Except.Except
+  Control.Monad.Trans.Except.ExceptT
+  Control.Monad.Trans.Reader.Reader
+  Control.Monad.Trans.Reader.ReaderT{runReaderT}
+  Control.Monad.Trans.State.Lazy.State
+  Control.Monad.Trans.State.Lazy.StateT{runStateT}
+  Data.Witherable.Chipped{Data.Witherable.Chipped getChipped}
+  Data.Witherable.Filter
+  Data.Witherable.Filter'
+  Data.Witherable.FilterLike
+  Data.Witherable.FilterLike'
+  Data.Witherable.Peat{Data.Witherable.Peat runPeat}
+  Data.Witherable.Witherable{Data.Witherable.catMaybes Data.Witherable.filter Data.Witherable.filterA Data.Witherable.mapMaybe Data.Witherable.wither}
+  GHC.Base.Maybe{GHC.Base.Just GHC.Base.Nothing}
+  GHC.Word.Word8
+  GHC.Prim.Double#
+  GHC.Prim.Float#
+  GHC.Prim.RealWorld
+  GHC.Types.*
+  GHC.Types.Bool{GHC.Types.False GHC.Types.True}
+  GHC.Types.Char
+  GHC.Types.Coercible
+  GHC.Types.Constraint
+  GHC.Types.Double{GHC.Types.D#}
+  GHC.Types.Float{GHC.Types.F#}
+  GHC.Types.Int
+  GHC.Types.Type
+  GHC.Types.Word
+module dependencies:
+package dependencies: MonadRandom-0.5.1@MonadRandom-0.5.1-EcpvpD35v121j9vVe9NicO
+                      StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
+                      Win32-2.3.1.1@Win32-2.3.1.1
+                      adjunctions-4.3@adjunctions-4.3-7h9c1tdDZXu8P6FNm02huQ
+                      aeson-1.1.2.0@aeson-1.1.2.0-9mqr6fCqEv51RJYIEmDXgS
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj
+                      attoparsec-0.13.1.0@attoparsec-0.13.1.0-6iPyUAJoTAPGwcAOuGuR2G
+                      base-4.9.1.0
+                      base-compat-0.9.3@base-compat-0.9.3-m1TEyTenyr5nJN40TpHVj
+                      base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu
+                      bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      comonad-5.0.2@comonad-5.0.2-3FTo66nTkqI3Ietv0tH3Pn
+                      containers-0.5.7.1@containers-0.5.7.1
+                      contravariant-1.4@contravariant-1.4-Ifaq3KUE7AMKghnfpeRc1M
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributive-0.5.3@distributive-0.5.3-BzdC7ZaASMl2Ol0Vw5IFtW
+                      dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk
+                      exceptions-0.8.3@exceptions-0.8.3-Ggtjm8GpjAqJV0BBy1Ma2L
+                      free-4.12.4@free-4.12.4-6HwxoB63YYDL0uIZip5T4x
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-L8gWZbpSNJyGigbhccn1Eo
+                      integer-gmp-1.0.0.1
+                      integer-logarithms-1.0.2@integer-logarithms-1.0.2-9alQ1qn5Hjw1kPaQoaK8Zd
+                      interlude-l-0.2.0.1@interlude-l-0.2.0.1-8CbWapBPQsR4lfQ1JUZgdH
+                      kan-extensions-5.0.2@kan-extensions-5.0.2-5hzdRb6qPXc59FVbz7uU8E
+                      lens-4.15.4@lens-4.15.4-IoVCRstGR7wARO63wbi4xs
+                      monad-control-1.0.2.2@monad-control-1.0.2.2-EGrQjc1R9AFDDAE5LoUK2d
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      prelude-extras-0.4.0.3@prelude-extras-0.4.0.3-BhL9U5k7NtGJn1itwIHt2Y
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      profunctors-5.2.1@profunctors-5.2.1-HvDTTJhYW2sAXw5KWK3V13
+                      protolude-0.1.10@protolude-0.1.10-71ux6JBb8F8BZGdKn5NhDY
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      reflection-2.1.2@reflection-2.1.2-DtgFw9GM27LIuWiuLnG6Nl
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      scientific-0.3.5.2@scientific-0.3.5.2-2xpTMWmF5YACE6U5Sncvct
+                      semigroupoids-5.2.1@semigroupoids-5.2.1-8sGPI0hjpsGGz1ma24JhYV
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      tagged-0.8.5@tagged-0.8.5-2FekbWvTugh4DIn4tSwH37
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-CHS1aCD6o4uK4fm30vavBX
+                      th-abstraction-0.2.6.0@th-abstraction-0.2.6.0-HRFJgpoqs5HJ5LgHnjmMhQ
+                      time-1.6.0.1@time-1.6.0.1
+                      time-locale-compat-0.1.1.3@time-locale-compat-0.1.1.3-KZ1jqNx8uhlHjmuPPj6V1Y
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      transformers-base-0.4.4@transformers-base-0.4.4-3He1TF3rGvT5F5jDQb7kpc
+                      transformers-compat-0.5.1.4@transformers-compat-0.5.1.4-2tm9ddmq5Qk3kF2emBuYBK
+                      unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-8qH1a2d5T6U51rYKj73rip
+                      uuid-types-1.0.3@uuid-types-1.0.3-EMVN1ZuG81M1iPeSxCq10I
+                      vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc
+                      witherable-0.1.3.4@witherable-0.1.3.4-DTsairmD87lKwrWplKAgjU
+orphans: attoparsec-0.13.1.0@attoparsec-0.13.1.0-6iPyUAJoTAPGwcAOuGuR2G:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.1.0@attoparsec-0.13.1.0-6iPyUAJoTAPGwcAOuGuR2G:Data.Attoparsec.Text.Internal
+         base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         base-orphans-0.6@base-orphans-0.6-AbJ3lKVXygDCG0eeQEv8Iu:Data.Orphans
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-L8gWZbpSNJyGigbhccn1Eo:Data.Hashable.Generic
+         reflection-2.1.2@reflection-2.1.2-DtgFw9GM27LIuWiuLnG6Nl:Data.Reflection
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-CHS1aCD6o4uK4fm30vavBX:Data.Text
+         text-1.2.2.2@text-1.2.2.2-CHS1aCD6o4uK4fm30vavBX:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-CHS1aCD6o4uK4fm30vavBX:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc:Data.Vector.Unboxed
+family instance modules: MonadRandom-0.5.1@MonadRandom-0.5.1-EcpvpD35v121j9vVe9NicO:Control.Monad.Trans.Random.Lazy
+                         adjunctions-4.3@adjunctions-4.3-7h9c1tdDZXu8P6FNm02huQ:Data.Functor.Rep
+                         attoparsec-0.13.1.0@attoparsec-0.13.1.0-6iPyUAJoTAPGwcAOuGuR2G:Data.Attoparsec.Internal.Types
+                         base-4.9.1.0:Control.Applicative base-4.9.1.0:Data.Complex
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Compose
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Biff
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Clown
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Fix
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Flip
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Join
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Joker
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Product
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Sum
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Tannen
+                         bifunctors-5.4.2@bifunctors-5.4.2-43wsvrK3WxP3YWjphSvMeD:Data.Bifunctor.Wrapped
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         dlist-0.8.0.3@dlist-0.8.0.3-BHFBNaw8k6n9WiaUNzoXpk:Data.DList
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-5hzdRb6qPXc59FVbz7uU8E:Data.Functor.Day
+                         kan-extensions-5.0.2@kan-extensions-5.0.2-5hzdRb6qPXc59FVbz7uU8E:Data.Functor.Yoneda
+                         lens-4.15.4@lens-4.15.4-IoVCRstGR7wARO63wbi4xs:Control.Lens.At
+                         lens-4.15.4@lens-4.15.4-IoVCRstGR7wARO63wbi4xs:Control.Lens.Internal.Indexed
+                         lens-4.15.4@lens-4.15.4-IoVCRstGR7wARO63wbi4xs:Control.Lens.Reified
+                         lens-4.15.4@lens-4.15.4-IoVCRstGR7wARO63wbi4xs:Control.Lens.Tuple
+                         lens-4.15.4@lens-4.15.4-IoVCRstGR7wARO63wbi4xs:Control.Lens.Wrapped
+                         lens-4.15.4@lens-4.15.4-IoVCRstGR7wARO63wbi4xs:Control.Lens.Zoom
+                         monad-control-1.0.2.2@monad-control-1.0.2.2-EGrQjc1R9AFDDAE5LoUK2d:Control.Monad.Trans.Control
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         profunctors-5.2.1@profunctors-5.2.1-HvDTTJhYW2sAXw5KWK3V13:Data.Profunctor.Rep
+                         tagged-0.8.5@tagged-0.8.5-2FekbWvTugh4DIn4tSwH37:Data.Tagged
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-CHS1aCD6o4uK4fm30vavBX:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-CHS1aCD6o4uK4fm30vavBX:Data.Text.Lazy
+                         th-abstraction-0.2.6.0@th-abstraction-0.2.6.0-HRFJgpoqs5HJ5LgHnjmMhQ:Language.Haskell.TH.Datatype
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-8qH1a2d5T6U51rYKj73rip:Data.HashMap.Base
+                         unordered-containers-0.2.8.0@unordered-containers-0.2.8.0-8qH1a2d5T6U51rYKj73rip:Data.HashSet
+                         uuid-types-1.0.3@uuid-types-1.0.3-EMVN1ZuG81M1iPeSxCq10I:Data.UUID.Types.Internal
+                         uuid-types-1.0.3@uuid-types-1.0.3-EMVN1ZuG81M1iPeSxCq10I:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-7zL8jLrScgT5Hz1nfWEdZc:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Float b620368aab866c2bb9d3a0a459566b84
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  interlude-l-0.2.0.1@interlude-l-0.2.0.1-8CbWapBPQsR4lfQ1JUZgdH:Interlude 0a554abb506dea6ffc3809bc69b3e691
+import  -/  stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM e8313ac31090bbd5c1406d0275deabbb
+import  -/  text-1.2.2.2@text-1.2.2.2-CHS1aCD6o4uK4fm30vavBX:Data.Text.Lazy f5cbe035e19724bda47f13345b27568a
+95ec87a3185ac3507c5a9891503bc68e
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Common.$trModule2
+                   Common.$trModule1) -}
+fd4d124c48560bc8514cfa1d24b95750
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Common"#) -}
+1f93a026045f9d4d5e33ce0a579d5290
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
