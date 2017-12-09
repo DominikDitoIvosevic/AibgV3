@@ -15,8 +15,13 @@ class Hero:
         self.crashed = crashed
 
 
-class Field:
-    # field name can be empty
-    # Prepreka, HerojName, AparatZaKavu, RudnikNeutralan, Rudnik1, Rudnik2, Prazno
-    def __init__(self, fieldName):
-        self.fieldName = fieldName
+class Direction:
+
+    # Direction, String
+    def __init__(self, previuousDirection, dir, x, y): # trenutna pozicija
+        self.previousDirection = previuousDirection
+        self.dir = dir
+        self.x = x
+        self.y = y
+
+

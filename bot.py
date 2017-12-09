@@ -20,6 +20,7 @@ json2 = json.loads(json2)
 
 
 playUrl = json2['playUrl']
+print(playUrl)
 post_fields2 = {'key':'ikb9qdsm', 'dir':'Stay' }
 request2 = Request(playUrl, urlencode(post_fields2).encode())
 json3 = urlopen(request2).read().decode()
