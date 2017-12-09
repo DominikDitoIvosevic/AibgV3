@@ -25,4 +25,11 @@ executable aibg2017
                      , servant
                      , aeson
                      , interlude-l
+                     , http-client
+                     , text
+                     , random
+                     , containers
   default-extensions:  NoImplicitPrelude
+                       TypeApplications
+                       OverloadedStrings
+  ghc-options:         -threaded -Wall

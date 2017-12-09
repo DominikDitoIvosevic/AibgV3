@@ -1,3 +1,3 @@
-module Common (module Common, module X) where
+module Common (module X) where
 
 import Interlude as X
