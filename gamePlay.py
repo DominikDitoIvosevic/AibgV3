@@ -6,8 +6,16 @@ import time
 
 import json
 
-bfsCounterMax = 50
-bfsCounter = bfsCounterMax
+# bfsCounterMax = 50
+# bfsCounter = bfsCounterMax
+
+enemyLast10 = Queue()
+
+def countDiffInQueue(myQueue):
+    return 10 if len(myQueue.queue) else len(set(myQueue.queue))
+
+def getOppositePoint(pos, goodBoard):
+    return (len(goodBoard) - 1 - pos[0], len(goodBoard) - 1 - pos[1])
 
 def parseHero (hero):
     id = hero['id'] #we know it is hero
@@ -74,15 +82,15 @@ def incPos(pos, direction):
 
 ###current request###
 
-def bfsToClosesX(goodBoard, heroMy, heroTheir, whereTo, ignoreds):
+def bfsToClosesX(goodBoard, startPos, whereTo, ignoreds):
     queue = Queue()
     # queue
-    bfsCounter = bfsCounterMax
+    # bfsCounter = bfsCounterMax
 
     visited = set()
     
     for direction in ['North', 'South', 'East', 'West']:
-        nextPos = incPos(heroMy.pos, direction)
+        nextPos = incPos(startPos, direction)
         ny, nx = nextPos
 
         if nx < 0 or ny < 0 or nx >= len(goodBoard) or ny >= len(goodBoard):
@@ -105,12 +113,13 @@ def bfsToClosesX(goodBoard, heroMy, heroTheir, whereTo, ignoreds):
         # print (0)
         visited.add(nexty)
 
-        if bfsCounter <= 0:
-            bfsCounter = bfsCounterMax
-            if time.time() - start > 0.8:
-                return ('North', 999)
+        if time.time() - start > 0.5:
+            print("timeout")
+            return ('North', 999)
+        # if bfsCounter <= 0:
+        #     bfsCounter = bfsCounterMax
         
-        bfsCounter -= 1
+        # bfsCounter -= 1
 
         for dire in ['North', 'South', 'East', 'West']:
             nextnext = incPos(nexty, dire)
@@ -142,24 +151,31 @@ def countTiles (goodBoard, tileTypes):
     return sum ([sum ([(1 if (tile in tileTypes) else 0) for tile in line]) for line in goodBoard])
 
 def getPathToHeal(goodBoard, heroMy, heroTheir):
-    return bfsToClosesX(goodBoard, heroMy, heroTheir, ['[]'], ['$2', '$-', '##', '$1', '@2'])[0]
+    return bfsToClosesX(goodBoard, heroMy.pos, ['[]'], ['$2', '$-', '##', '$1', '@2'])[0]
 
 def getPathToGranny(goodBoard, heroMy, heroTheir):
-    return bfsToClosesX(goodBoard, heroMy, heroTheir, [heroTheir.heroTile], ['[]', '$2', '$-', '##', '$1'])[0]
+    return bfsToClosesX(goodBoard, heroMy.pos, [heroTheir.heroTile], ['[]', '$2', '$-', '##', '$1'])[0]
+
+def getPathToStart(goodBoard, heroMy, heroTheir):
+    return bfsToClosesX(goodBoard, heroMy.spawnPos, [heroMy.heroTile], ['[]', '$2', '$-', '##', '$1'])[0]
 
 def getPathToMine(goodBoard, heroMy, heroTheir):
-    return bfsToClosesX(goodBoard, heroMy, heroTheir, [heroTheir.mineTile, '$-'], ['[]', '$-', '##', heroMy.mineTile])[0]
+    return bfsToClosesX(goodBoard, heroMy.pos, [heroTheir.mineTile, '$-'], ['[]', '$-', '##', heroMy.mineTile])[0]
+
+def getPathToMineWithPos(goodBoard, myPos, heroMy, heroTheir):
+    return bfsToClosesX(goodBoard, myPos, [heroTheir.mineTile, '$-'], ['[]', '$-', '##', heroMy.mineTile])[0]
 
 def getDistanceToHeal(goodBoard, heroMy, heroTheir):
-    # print(heroTheir)
-    # print(heroMy)
-    return bfsToClosesX(goodBoard, heroMy, heroTheir, ['[]'], ['$2', '$-', '##', '$1', '@2'])[1]
+    return bfsToClosesX(goodBoard, heroMy.pos, ['[]'], ['$2', '$-', '##', '$1', '@2'])[1]
 
 def getDistanceToGranny(goodBoard, heroMy, heroTheir):
-    return bfsToClosesX(goodBoard, heroMy, heroTheir, [heroTheir.heroTile], ['[]', '$2', '$-', '##', '$1'])[1]
+    return bfsToClosesX(goodBoard, heroMy.pos, [heroTheir.heroTile], ['[]', '$2', '$-', '##', '$1'])[1]
+
+def getDistanceToStart(goodBoard, heroMy, heroTheir):
+    return bfsToClosesX(goodBoard, heroMy.spawnPos, [heroMy.heroTile], ['[]', '$2', '$-', '##', '$1'])[1]
 
 def getDistanceToMine(goodBoard, heroMy, heroTheir):
-    return bfsToClosesX(goodBoard, heroMy, heroTheir, [heroTheir.mineTile, '$-'], ['[]', '$-', '##', heroMy.mineTile])[1]
+    return bfsToClosesX(goodBoard, heroMy.pos, [heroTheir.mineTile, '$-'], ['[]', '$-', '##', heroMy.mineTile])[1]
 
 ### init request ####
 
@@ -224,10 +240,22 @@ while True:
 
     print ("viewUrl {}".format(viewUrl))
 
+    def bloodThirst(goodBoard, heroMy, heroTheir):
+        if countDiffInQueue(enemyLast10) < 4:
+            return getPathToMineWithPos(goodBoard, getOppositePoint(heroTheir.pos), heroMy, heroTheir)
+
+        return getPathToGranny(goodBoard, heroMy, heroTheir)
+
     def algorithm2 (goodBoard, heroMy, heroTheir):
+        enemyLast10.put(heroTheir.pos)
+        if len(enemyLast10.queue) > 10:
+            enemyLast10.get()
         # print (str(heroMy.pos['x']) + " " + str(heroMy.pos['y']))
         # print (heroMy.life)
         if heroMy.life < 40:
+            return getPathToHeal(goodBoard, heroMy, heroTheir)
+
+        if heroMy.life < 60 and getDistanceToHeal(goodBoard, heroMy, heroTheir) < 3:
             return getPathToHeal(goodBoard, heroMy, heroTheir)
 
         if heroTheir.mineCount - heroMy.mineCount > 4:
@@ -236,8 +264,7 @@ while True:
             return getPathToGranny(goodBoard, heroMy, heroTheir)
 
         if getDistanceToGranny(goodBoard, heroMy, heroTheir) < 5:
-            # print (heroTheir)
-            if heroMy.life < heroTheir.life:
+            if heroMy.life + 10 < heroTheir.life:
                 return getPathToHeal(goodBoard, heroMy, heroTheir)
 
         if countTiles(goodBoard, ['$-', heroTheir.mineTile]) < 3:
