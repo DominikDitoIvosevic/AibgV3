@@ -34,7 +34,7 @@ def yieldDirection(currDirection):
 
     totalPath.append(currDirection.dir)
 
-    return currDirection.dir
+
 
 
 
@@ -60,10 +60,9 @@ def algorithm1 (goodBoard, heroMy, heroTheir):
     visited = set()
     visited.add((currX, currY))
 
-   # fst = True
 
-    # inace stay ako nemas di ...
     while True:
+
 
         for dir in directons:
 
@@ -95,6 +94,10 @@ def algorithm1 (goodBoard, heroMy, heroTheir):
             direction = Direction(prevDirection, dir, finX, finY)
             qveve.put(direction)
 
+
+        if qveve.qsize() == 0:
+            totalPath.append('Stay')
+            return
 
         currDirection = qveve.get()
 
@@ -163,7 +166,7 @@ def parseBoard(boardSize, boardTiles):
 
 ### init request ####
 
-post_fields = {'key': 'eyx3wvrg', 'turns':100}     # actually 6 turns, it returns 3*4 = 12
+post_fields = {'key': 'eyx3wvrg', 'turns':25}     # actually 6 turns, it returns 3*4 = 12
 url = 'http://192.168.3.251:9000/api/training'
 request = Request(url, urlencode(post_fields).encode())
 jsonData = json.loads(urlopen(request).read().decode())
@@ -173,6 +176,7 @@ jsonData = json.loads(urlopen(request).read().decode())
 bol = False
 fstIter = True
 goodBoard = None
+viewUrl = None
 
 while True:
 
@@ -220,22 +224,14 @@ while True:
     token = jsonData['token']
     viewUrl = jsonData['viewUrl']
     playUrl = jsonData['playUrl'] # koristi se za zahtjev
-    print(viewUrl)
+
 
 
    # print ("viewUrl {}".format(viewUrl))
 
 
 
-    ###current request###
 
-
-
-
-    ##complicated algo to determine direction###
-
-
-    """
     dir = None
     if len(totalPath) > 0:
         dir = totalPath[-1]
@@ -245,11 +241,11 @@ while True:
         dir = totalPath[-1]
         totalPath.pop()
     
-    """
 
-    dir = callDirectionAlgorithm (algorithm1, goodBoard, heroMy, heroTheir)
 
-    print(dir)
+   # dir = callDirectionAlgorithm (algorithm1, goodBoard, heroMy, heroTheir)
+
+   # print(dir)
     ############################################
 
     # Stay, North, South, East, West
@@ -262,7 +258,7 @@ while True:
 
     ####current request end ###
 
-
+print(viewUrl)
 
 
 
