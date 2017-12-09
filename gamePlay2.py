@@ -127,10 +127,16 @@ def goHealYourself(goodBoard, heroMy, heroTheir):
 
 
 
+
+
+
+
+
+
 # bfs
 def algorithm1 (goodBoard, heroMy, heroTheir):
 
-    if heroMy.life < 30:
+    if heroMy.life < 40:
          return goHealYourself(goodBoard, heroMy, heroTheir)
 
 
@@ -262,7 +268,7 @@ def parseBoard(boardSize, boardTiles):
 
 ### init request ####
 
-post_fields = {'key': 'eyx3wvrg'}     # actually 6 turns, it returns 3*4 = 12
+post_fields = {'key': '536rk7um'}     # actually 6 turns, it returns 3*4 = 12
 url = 'http://192.168.3.251:9000/api/arena'
 request = Request(url, urlencode(post_fields).encode())
 jsonData = json.loads(urlopen(request).read().decode())
@@ -347,7 +353,7 @@ while True:
 
     # Stay, North, South, East, West
 
-    post_fields = {'key': 'eyx3wvrg', 'dir': dir}
+    post_fields = {'key': '536rk7um', 'dir': dir}
 
     url = playUrl  # Set destination URL here
     request = Request(url, urlencode(post_fields).encode())
