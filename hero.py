@@ -17,6 +17,6 @@ class Hero:
 
 class Field:
     # field name can be empty
-    # Prepreka, HerojName, AparatZaKavu, RudnikNeutralan, Rudnik1, Rudnik2
+    # Prepreka, HerojName, AparatZaKavu, RudnikNeutralan, Rudnik1, Rudnik2, Prazno
     def __init__(self, fieldName):
         self.fieldName = fieldName

@@ -35,43 +35,32 @@ def parseBoard(boardSize, boardTiles):
     state = 0
     stateBefore = 0
 
+    while (len(boardTiles) > 0):
 
+        if boardTiles[0:2] == '  ':
+            fields.append(Field('Prazno'))
+        if boardTiles[0:2] == '##':
+            fields.append(Field('Prepreka'))
+        elif boardTiles[0:2] == '@1':
+            fields.append(Field('Heroj1'))
+        elif boardTiles[0:2] == '@2':
+            fields.append(Field('Heroj2'))
+        elif boardTiles[0:2] == '[]':
+            fields.append('AparatZaKavu')
+        elif boardTiles[0:2] == '$-':
+            fields.append('RudnikNeutralan')
+        elif boardTiles[0:2] == '$1':
+            fields.append('Rudnik1')
+        elif boardTiles[0:2] == '$2':
+            fields.append('Rudnik2')
 
-    for character in boardTiles:
-
-
-        if character == '#':
-            if state == 0:
-                state = 1
-            elif state == 1:
-                state = 0
-                fields.append(Field('Prepreka'))
-        elif character == '@':
-            stateBefore = 1
-        elif character == '$':
-            stateBefore = 2
-        elif character == ']':
-            fields.append(Field('AparatZaKavu'))
-        elif character == '-':
-            fields.append(Field('RudnikNeutralan'))
-        elif character == '1':
-            if stateBefore == 1:
-                fields.append(Field("Heroj1"))
-            elif stateBefore == 2:
-                fields.append(Field("Rudnik1"))
-            stateBefore = 0
-        elif character == '2':
-            if stateBefore == 1:
-                fields.append(Field("Heroj2"))
-            elif stateBefore == 2:
-                fields.append(Field("Rudnik2"))
-            stateBefore = 0
-        elif character == ' ':
-            fields.append(Field('Empty'))
+        boardTiles = boardTiles[2:]
 
     lenOfFields = len(fields)
     rows = lenOfFields//boardSize
     finalBoard = []
+
+    print (lenOfFields, boardSize)
 
     currStart = 0
     for i in range(0, rows):
