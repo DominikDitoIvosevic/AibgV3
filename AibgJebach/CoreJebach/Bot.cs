@@ -16,6 +16,7 @@ namespace AibgJebach
     {
       this.IsBotNumberOne = isBotNumberOne;
       this.StartingPosition = startingPosition;
+      this.Position = startingPosition;
       this.OwnedMines = new List<Position>();
     }
 
