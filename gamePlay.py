@@ -34,19 +34,124 @@ def yieldDirection(currDirection):
 
     totalPath.append(currDirection.dir)
 
+    return  currDirection.dir
+
+
+def yieldDirectionToCoffe(currDirection):
+
+    coffeDirection = []
+    while currDirection.previousDirection is not None:
+        coffeDirection.append(currDirection.dir)
+        currDirection = currDirection.previousDirection
+
+    coffeDirection.append(currDirection.dir)
+
+    return currDirection.dir
+
+def calcManhatan(x1, y1, x2, y2):
+    return
+
+def goHealYourself(goodBoard, heroMy, heroTheir):
+    ### just find closest shite ###
+
+   # pathsToHeal = []
+   # cordsOfHeal = []
+
+    qveve = queue.Queue()
+
+    maxX = len(goodBoard)
+    maxY = len(goodBoard[0])
+
+    directons = ['North', 'South', 'East', 'West']
+    directionRoute = {'North':(-1, 0), 'South': (1, 0), 'East': (0, 1), 'West':(0, -1)}
+
+    currX, currY = heroMy.pos['x'], heroMy.pos['y']
+
+    #print("trenutno polje {} {}".format(currX, currY))
+
+    prevDirection = None
+
+    visited = set()
+    visited.add((currX, currY))
+
+
+    while True:
+
+
+        for dir in directons:
+
+            dx, dy = directionRoute[dir]
+
+            finX = currX + dx
+            finY = currY + dy
+
+
+            if finX >= maxX or finY >= maxY or finX < 0 or finY < 0:
+                continue
+
+            if goodBoard[finX][finY] == 'Prepreka':
+                continue
+
+            if goodBoard[currX][currY] == 'RudnikNeutralan' or goodBoard[currX][currY] == 'Rudnik1' or goodBoard[currX][currY] == 'Rudnik2':
+                continue
+            # nasli smo, treba prekinut i to, i rekonsturirat
+
+
+
+
+            if (finX, finY) in visited:
+                continue
+
+          #  print("opcije {} {}".format(finX, finY))
+            direction = Direction(prevDirection, dir, finX, finY)
+            qveve.put(direction)
+
+
+        if qveve.qsize() == 0:
+            break
+
+        currDirection = qveve.get()
+
+        currX, currY = currDirection.x, currDirection.y
+        visited.add((currX, currY))
+
+        prevDirection = currDirection
+
+       # print ("pretrazujemo {} {}".format(currX, currY))z
+        if goodBoard[currX][currY] == 'AparatZaKavu':
+            # nasli smo, treba prekinut i to, i rekonsturirat
+            return yieldDirectionToCoffe(currDirection)
+
+    #pathsToHeal.sort(key = len)
+
+    #  manhatan1 = calcManhatan( heroMy[pos]['x'], heroMy[pos]['y'], heroTheir[pos]['x'], heroTheir[pos]['y'] )
+
+    # meh , bumo onaj s najtupljim (najvecim kutem, i to je to)
+
+
+
+
+
+
+
+
 
 
 
 
 # bfs
 def algorithm1 (goodBoard, heroMy, heroTheir):
+
+    if heroMy.life < 30:
+         return goHealYourself(goodBoard, heroMy, heroTheir)
+
+
+    ### just find closest shite ###
+
     qveve = queue.Queue()
 
     maxX = len(goodBoard)
     maxY = len(goodBoard[0])
-
-
-
 
     directons = ['North', 'South', 'East', 'West']
     directionRoute = {'North':(-1, 0), 'South': (1, 0), 'East': (0, 1), 'West':(0, -1)}
@@ -97,7 +202,7 @@ def algorithm1 (goodBoard, heroMy, heroTheir):
 
         if qveve.qsize() == 0:
             totalPath.append('Stay')
-            return
+            return 'Stay' #curr meta
 
         currDirection = qveve.get()
 
@@ -231,7 +336,7 @@ while True:
 
 
 
-
+    """
     dir = None
     if len(totalPath) > 0:
         dir = totalPath[-1]
@@ -241,9 +346,10 @@ while True:
         dir = totalPath[-1]
         totalPath.pop()
     
+    """
 
-
-   # dir = callDirectionAlgorithm (algorithm1, goodBoard, heroMy, heroTheir)
+   #
+    dir = callDirectionAlgorithm (algorithm1, goodBoard, heroMy, heroTheir)
 
    # print(dir)
     ############################################
